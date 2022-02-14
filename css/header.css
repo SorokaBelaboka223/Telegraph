@@ -1,0 +1,43 @@
+.header {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.header-fixed {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background-color: white;
+    animation-name: showHeader;
+    animation-duration: 500ms;
+    z-index: 999;
+    padding-left: 150px;
+    padding-right: 150px;
+    
+}
+
+@keyframes showHeader {
+    0% {
+        opacity: 0;
+        top: -106px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+#header__company {
+    color: #FF0043;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Media */
+@media screen and (max-width: 600px) {
+    
+}

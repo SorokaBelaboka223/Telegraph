@@ -1,0 +1,31 @@
+.footer {
+    margin-top: 80px;
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: space-between;
+}
+
+.footer__rightPart {
+    display: flex;
+}
+
+.rightPart__text:hover {
+    cursor:pointer;
+    text-decoration: underline;
+    color: #FF0043;
+}
+
+.rightPart__text + .rightPart__text {
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer__leftPart {
+        margin-top: 20px;
+    }
+}
